@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTO | Game Plateform</title>
+    <link rel="shortcut icon" href="../sary/Icone.png" type="image/x-icon">
+	<script src="../js/Load.js"></script>
+	<script language="JavaScript" type="Text/Javascript" src="..\js1\script.js" defer></script>
+    <link rel="stylesheet" href="../css/Load.css">
+</head>
+	<style>
+		#MyBar{
+			width: 1%;
+			height: 100%; 
+			position: absolute;
+			background-color: Dodgerblue;
+		}
+		#MyProgress{
+			width: 100%;
+			position: relative;
+			background-color: white;
+			height: 5%;
+			border: 1px solid grey;
+			border-radius: 5px;
+		}
+	</style>
+	<body onload="setTimeout(move, 3000)">
+	<div id="image">
+		<center><img src="../sary/Icone.png"/></center>
+	</div>
+		
+	<div id="MyProgress">
+		<div id="MyBar" >10%</div>
+	</div>
+	<div class="ouvrir">
+		<button class="btnOpen"><a href="../html/demarrage.html">Commencer</a></button>
+	</div>
+	<br> 
+	<!-- <center><button onload="move()">PUSH</button></center> -->
+	</body>
+</html>

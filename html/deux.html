@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTO|Game Platform</title>
+    <link rel="shortcut icon" href="../sary/Icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/deux.css">
+    <link rel="stylesheet" href="../fontawesome/fontawesome/css/all.min.css">
+    <script src="../js/anim.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="containBtn1">
+            <a href="demarrage.html">
+                <button title="Acceuil" class="home"></button>
+            </a>
+            <button class="param" title="parametre"></button>
+            <button title="Info" class="info"></button>
+            <button title="Listes" id="liste"></button>
+        </div>
+            
+        <button title="Quitter" class="droite">
+            <a href="deux.html"><i class="fas fa-window-close"></i></a>
+        </button>
+    </header>
+    
+    <div class="containBtnCard">
+        <button id="cart">Distribuez les cartes</button>
+    </div>
+    
+       <!-- code pour le parametre -->
+    <div class="parametre">
+        <div class="indicaComment color"></div>
+
+        <div class="exit_param">
+            <button id="exitt" onclick="fermer()">Fermer</button>
+        </div> 
+        <br>
+        <div class="misafidy">
+            <label for="color_carte">Choisissez la couleur des cartes: </label>
+            <input type="color" name="color_carte" id="choix_color">
+        </div>
+    </div>
+
+     <!-- code pour le bouton aide -->
+     <div class="aide" id="aide">
+        <div class="indicaComment"></div>
+           <div class="exit_aide">
+               <button id="exita" onclick="manakatona()">fermer</button>
+           </div>
+           <div class="containBtn">
+                <button class="jeu">Comment y jouer</button>
+                <div class="cmt">
+                    <h4 class="sousTitre">Pour y jouer c'est simple: 
+                        <hr>    
+                        <br>      
+                        <ol type="circle">
+                            <li class="nav-list"> Vous selectionnez la couleur de votre carte dans les parametres,</li> 
+                            <li class="nav-list"> apres suffit juste d'appuyez sur "distribuez les cartes".</li>
+                            <li class="nav-list"> Cliquez sur le bouton gris a gauche pour faire sortir les chiffres.</li>
+                            <li class="nav-list mavListF"> Quand une chiffre sur votre carte est sorti,cliquez sur le chiffre pur le marquer.</li>
+                        </ol>
+                        Pour gagner il faut avoir deux ligne marqué 
+                    </h4>
+                </div>
+                <a href="dev.html">
+                    <button class="dev">Devellopeurs</button>
+                </a>
+            </div>   
+
+     </div>
+    <div class="carte">
+        <table id='tab'>
+
+        </table>
+        <br>
+        <aside>
+            <button id="chf">
+
+            </button>
+             <div id = "MyProgress">
+                <div id="MyBar"> 
+                </div>
+            </div> 
+        </aside>
+        <table id="ordi">
+
+        </table>
+    </div>
+    <br>
+    <div id="board">
+        <button id="ex"></button>
+        <h1>Liste des nombres qui sont déja sorti:</h1> 
+        <br>
+        <div id="dash">
+        
+        </div>    
+    </div>
+</body>
+</html>
